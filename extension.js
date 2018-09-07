@@ -24,7 +24,7 @@ function init() {
         }
 
         if (!(id in buttons)) {
-            buttons[id] = new St.Button({ style_class: 'panel-button', label: label });
+            buttons[id] = new St.Button({ style_class: 'shepherd-label', label: label });
             Main.panel._rightBox.insert_child_at_index(buttons[id], 0);
 
             return
